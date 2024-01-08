@@ -18,7 +18,7 @@ html {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  block-size: 100%;
+  block-size: 800px;
   inline-size: 1200px;
 }
 
@@ -91,11 +91,11 @@ ol {
 }
 
 .content__list-item {
-  margin-top: 30px;
+  margin-top: 33px;
 }
 
 .content__list-item:first-child {
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .content__video-card {
@@ -105,8 +105,8 @@ ol {
 
 .content__video-card-thumbnail {
   flex-shrink: 0;
-  inline-size: 194px;
-  block-size: 103px;
+  inline-size: 200px;
+  block-size: 104px;
 }
 
 .content__video-card-thumbnail img {
@@ -192,7 +192,7 @@ ol {
 }
 
 .search-form__label {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   width: fit-content;
   cursor: pointer;
@@ -226,14 +226,14 @@ input:focus {
 .search-form__checkbox-list {
   display: inline-flex;
   align-items: center;
-  gap: 15px;
-  padding-bottom: 5px;
+  gap: 19px;
+  padding-bottom: 3px;
 }
 
 input[type="checkbox"] + .search-form__pseudo-checkbox {
   display: inline-block;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
   margin-right: 5px;
   vertical-align: middle;
   outline: 1px solid #ffffff;
@@ -284,6 +284,7 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
+  margin-bottom: -2px;
 }
 
 .button:active {
