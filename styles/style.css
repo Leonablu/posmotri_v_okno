@@ -269,13 +269,6 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   block-size: 34px;
 }
 
-.search-form__submit-button {
-  display: flex;
-  flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
-}
-
 .more-button {
   display: flex;
   flex-shrink: 0;
@@ -285,6 +278,13 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   margin-top: 33px;
   inline-size: 397px;
   block-size: 34px;
+}
+
+.search-form__submit-button {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:active {
