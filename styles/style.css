@@ -9,6 +9,7 @@ html {
 }
 
 .page {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +55,7 @@ ol {
 .content {
   display: inline-flex;
   align-items: flex-end;
-  gap: 30px;
+  gap: 29px;
   inline-size: 1140px;
 }
 
@@ -62,9 +63,8 @@ ol {
   display: inline-flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 40px;
-  inline-size: 711px;
-  block-size: 54px;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .search-form__fieldset-title {
@@ -79,18 +79,15 @@ ol {
 
 .content__list {
   position: relative;
-  padding: 0px 3px 3px 3px;
   overflow: auto;
-  block-size: 301px;
+  block-size: 303px;
 }
 
 .content__details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 26px;
-  width: 100%;
-  height: 100%;
+  gap: 16px;
 }
 
 .content__list-item {
@@ -107,6 +104,7 @@ ol {
 }
 
 .content__video-card-thumbnail {
+  flex-shrink: 0;
   inline-size: 194px;
   block-size: 103px;
 }
@@ -119,6 +117,7 @@ ol {
 .content__video-card-description-container {
   flex-grow: 1;
   inline-size: 100%;
+  block-size: 100%;
 }
 
 .result__video-container {
@@ -156,7 +155,7 @@ ol {
 
 .content__card-link {
   display: block;
-  margin: 2px 2px 2px 2px;
+  margin: 3px;
   color: #fff;
   text-decoration: none;
 }
@@ -184,12 +183,12 @@ ol {
 
 .content__video-card-title {
   color: #fff;
-  font-family: inherit;
-  font-weight: inherit;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
   font-size: 30px;
   font-style: normal;
   line-height: 100%;
-  text-transform: inherit;
+  text-transform: uppercase;
 }
 
 .search-form__label {
@@ -225,7 +224,7 @@ input:focus {
 }
 
 .search-form__checkbox-list {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 15px;
   padding-bottom: 5px;
@@ -275,9 +274,9 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  margin-top: 33px;
-  inline-size: 397px;
-  block-size: 34px;
+  margin: 32px 2px 2px 2px;
+  inline-size: 398px;
+  block-size: 35px;
 }
 
 .search-form__submit-button {
@@ -301,5 +300,5 @@ input[type="checkbox"]:checked + .search-form__pseudo-checkbox {
 
 .button:focus-visible {
   outline: 1px solid #fff;
-  outline-offset: 2px;
+  outline-offset: 1px;
 }
